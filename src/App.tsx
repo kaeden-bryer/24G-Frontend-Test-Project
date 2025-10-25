@@ -28,6 +28,7 @@ function App() {
           className="fixed inset-0 z-[10] flex items-center justify-center bg-black/60"
           onClick={() => setShowRecipe(false)}
         >
+          <img src="https://assets.24g.com/public/2022-frontend-test-project/exit_icon.svg" className="absolute top-[10%] right-[10%] w-[30px] h-[30px] cursor-pointer" alt="Close Icon" />
           <div onClick={(e) => e.stopPropagation()}>
             <Recipe showRecipe={true} drink={drink} />
           </div>
