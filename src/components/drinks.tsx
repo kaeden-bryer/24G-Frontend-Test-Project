@@ -1,12 +1,12 @@
 import drinks from '../data/drinks.json';
 
 interface DrinksProps {
-    sendDataToParent: (drink: any) => void; // Replace 'any' with the correct type if available
+    setCurrentDrink: (drink: any) => void; // Replace 'any' with the correct type if available
 }
 
-function Drinks({ sendDataToParent }: DrinksProps) {
+function Drinks({ setCurrentDrink }: DrinksProps) {
     const passDrinkToParent = (drink: any) => {
-        sendDataToParent(drink);
+        setCurrentDrink(drink);
     }
 
     return (

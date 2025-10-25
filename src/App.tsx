@@ -8,28 +8,35 @@ function App() {
   const [showRecipe, setShowRecipe] = useState(false)
   const [drink, setDrink] = useState<Drink | null>(null);
 
-  // fix this later to be more elegant
-  const handleDataFromChild = (drink: any) => {
+  const setCurrentDrink = (drink: any) => {
     setDrink(drink);
     setShowRecipe(true);
   }
 
   return (
-    <div className="App relative">
-      <img src="https://assets.24g.com/public/2022-frontend-test-project/24g_logo.svg"/>
+    <>
+      <img className="mt-[40px] ml-[40px]" src="https://assets.24g.com/public/2022-frontend-test-project/24g_logo.svg"/>
       
       <h1 className="mt-[100px]">Drinks Recipe Anthology</h1>
 
-      <div className="mt-[100px] mb-[5rem] flex justify-self-center w-[60vw] text-center">
+      <div className="mt-[100px] mb-[5rem] flex justify-self-center w-[40vw] text-center text-[1.2rem]">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempora iure minus deleniti soluta repudiandae beatae corrupti blanditiis illum cumque molestiae dolores totam modi ducimus, velit ipsum. Provident, magni perspiciatis!</p>
       </div>  
 
-      <div className="flex justify-self-center absolute top-[30vh] z-[10]">
-          {drink && <Recipe showRecipe={showRecipe} closeRecipe={()=>setShowRecipe(false)} drink={drink}/>}
-      </div>
+      {showRecipe && drink && (
+        <div
+          className="fixed inset-0 z-[10] flex items-center justify-center bg-black/60"
+          onClick={() => setShowRecipe(false)}
+        >
+          <img src="https://assets.24g.com/public/2022-frontend-test-project/exit_icon.svg" className="absolute top-[10%] right-[10%] w-[30px] h-[30px] cursor-pointer" alt="Close Icon" />
+          <div onClick={(e) => e.stopPropagation()}>
+            <Recipe showRecipe={true} drink={drink} />
+          </div>
+        </div>
+      )}
       
-      <Drinks sendDataToParent={handleDataFromChild}/>
-    </div>
+      <Drinks setCurrentDrink={setCurrentDrink}/>
+    </>
   )
 }
 
