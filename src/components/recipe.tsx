@@ -10,7 +10,7 @@ interface RecipeProps {
 function Recipe({showRecipe, drink}: RecipeProps){
     if (!showRecipe) {return null}
     return (
-        <div className="recipe-card bg-[#1f1f1f] p-[20px] rounded-[1em] w-[90vw] h-[80vh] md:w-[70vw] md:h-[80vh] lg:w-[50vw] overflow-hidden flex flex-col">
+        <div className="recipe-card bg-[#1f1f1f] p-[20px] lg:p-[50px] rounded-[1em] w-[90vw] h-[80vh] md:w-[70vw] md:h-[80vh] lg:w-[50vw] overflow-hidden flex flex-col">
             <h1 className="block w-full text-center text-2xl md:text-4xl mt-[1rem] mb-[1rem]">{drink.name}</h1>
 
             <div className="flex-1 min-h-0 overflow-auto p-[2rem]">
