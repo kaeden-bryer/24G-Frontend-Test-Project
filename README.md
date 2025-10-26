@@ -6,7 +6,7 @@ By Kaeden Bryer
 
 Submitted on Saturday, Oct 26th
 
-Hours worked: ≈6 hours
+Hours worked: ≈7 hours
 
 This site is live at: https://kaeden-bryer.github.io/24G-Frontend-Test-Project/
 
