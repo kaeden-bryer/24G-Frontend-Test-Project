@@ -1,6 +1,6 @@
 # 24G Frontend Test Project
 
-## Drink Bar Recipe Anthology
+## 🍸Drink Bar Recipe Anthology
 
 By Kaeden Bryer
 
@@ -36,4 +36,9 @@ Since I'm used to designing websites for desktops, I designed the entire site fo
 
 I used Angular throughout the entirety of my time at Tyler, so honestly, that's what I know best. However, being a university student, I know it's more valuable to have strong React skills to work with other classmates (since it's the framework everyone learns first). I've used React before, and thought this woul be great chance to refresh on using React. In particular, this was a great refresh on the structure of a React app, passing props between components, and using TailwindCSS.
 
-I'm really happy with what I've created. I did my best to add some love to it, and not just submit a thoughtless AI generated product. Hopefully you'll like it too :)
+I'm really happy with what I've created. I did my best to add some love to it, and not just submit a thoughtless AI generated product. Hopefully you'll like it too.
+
+Thank you for considering me. Hope you have a great day :)
+
+Cheers,
+Kaeden🥂❤️
