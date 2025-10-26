@@ -11,9 +11,9 @@ function Drinks({ setCurrentDrink }: DrinksProps) {
 
     return (
         <>
-            <div className="text-white flex flex-row flex-wrap w-[70vw] justify-self-center justify-center">
+            <div className="text-white flex flex-row flex-wrap w-[90vw] md:w-[85vw] lg:w-[70vw] justify-self-center justify-center">
                 {drinks.drinks.map((drink: any) => (
-                <div key={drink.name} onClick={() => passDrinkToParent(drink)} className="w-[22%] card relative h-[17vw] ml-[8px] mr-[8px]">
+                <div key={drink.name} onClick={() => passDrinkToParent(drink)} className="card relative w-[40%] h-[45vw] md:w-[30%] md:h-[28vw] lg:w-[22%] lg:h-[17vw]  ml-[8px] mr-[8px]">
                     <img className="card-front absolute" src={drink.images.front}></img>
                     <img className="card-back absolute" src={drink.images.back}></img>
                 </div>
