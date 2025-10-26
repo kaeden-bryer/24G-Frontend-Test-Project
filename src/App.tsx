@@ -19,7 +19,7 @@ function App() {
       <h1 className="mt-[100px]">Holiday Drinks Anthology</h1>
 
       <div className="mt-[100px] mb-[5rem] flex flex-col justify-self-center w-[40vw] text-center text-[1.2rem]">
-        <p>Welcome to the 24G Holiday Drinks Anthology! Enjoy our curated collection of boozy drinks, handcrafted and selected by the 24G bar</p>
+        <p>Welcome to the 24G Holiday Drinks Anthology! Enjoy our curated collection of boozy drinks, handcrafted and selected by the 24G bar.</p>
         <br />
         <p>Developed by (hopeful) future intern, Kaeden Bryer💝</p>
       </div>
