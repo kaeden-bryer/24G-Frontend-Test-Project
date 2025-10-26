@@ -1,6 +1,19 @@
 @import url("https://assets.24g.com/public/2022-frontend-test-project/fonts.css");
 @import "tailwindcss";
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background: #756e6e4d;
+    border-radius: 6px;
+}
+
 body {
   background-image: url('https://assets.24g.com/public/2022-frontend-test-project/bg_desktop.png');
   color: white;
@@ -12,6 +25,12 @@ h1 {
     display: flex;
     justify-self: center;
     font-family: "Writable Story";
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #444444;
 }
 
 .card {
