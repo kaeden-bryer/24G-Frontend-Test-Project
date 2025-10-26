@@ -1,6 +1,6 @@
 # 24G Frontend Test Project
 
-## 🍸Drink Bar Recipe Anthology
+## 🍸Holiday Drinks Anthology
 
 By Kaeden Bryer
 
