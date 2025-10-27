@@ -46,6 +46,7 @@ hr {
 
 .card:hover {
     transform: translateY(-20px);
+    cursor: pointer;
 }
 
 .card-front {
